@@ -1,0 +1,38 @@
+=== 1. Ticks <-> price (price = 1.0001^tick) ===
+tick  -6960  ->  price 0.498593
+tick    -60  ->  price 0.994018
+tick      0  ->  price 1.000000
+tick     60  ->  price 1.006018
+tick   6931  ->  price 1.999836
+tick  23028  ->  price 10.000998
+price 2.0  -> tick 6931  (tickSpacing 60 -> 6900)
+sqrtPriceX64(2.0) = 26087635650665564424
+decimals: SOL(9)/USDC(6) human price 150 -> tick -18973
+
+=== 2. Classic AMM x*y=k (Raydium AMM v4 / CPMM) ===
+swap 10 A -> 19.7530 B   exec price 1.9753  (price impact 1.24%)
+swap 100 A -> 181.4049 B   exec price 1.8140  (price impact 9.30%)
+swap 500 A -> 665.5546 B   exec price 1.3311  (price impact 33.44%)
+
+=== 3. Concentrated liquidity: same 1000 A of capital ===
+range full range (~x*y=k)    L =       1414   needs B =    2000.04
+range 1.0 - 4.0              L =       4828   needs B =    2000.00
+range 1.6 - 2.4 (±20%)       L =      16231   needs B =    2423.37
+range 1.9 - 2.1 (±5%)        L =      58681   needs B =    2101.30
+-> narrower range = more liquidity L from the same tokens = more fees, but out-of-range sooner
+
+=== 4. Position state vs price (range 1.6 - 2.4, L from 1000 A at P=2) ===
+price 1.4  A= 2354.70  B=    0.00  out of range: 100% A, no fees
+price 1.6  A= 2354.70  B=    0.00  out of range: 100% A, no fees
+price 1.8  A= 1620.83  B= 1245.42  in range: earns fees
+price 2.0  A= 1000.00  B= 2423.37  in range: earns fees
+price 2.2  A=  465.88  B= 3543.75  in range: earns fees
+price 2.4  A=    0.00  B= 4614.26  out of range: 100% B, no fees
+price 2.6  A=    0.00  B= 4614.26  out of range: 100% B, no fees
+
+=== 5. Impermanent loss (full range) ===
+price x1.25: IL -0.62%
+price x1.5: IL -2.02%
+price x2: IL -5.72%
+price x4: IL -20.00%
+Concentrated positions amplify both fees AND impermanent loss.

@@ -1,0 +1,16 @@
+=== PoolState ===
+pool:            8HUDR4pgizvYtgRdAE82RyyK8jTEqVNLi9c9xNFbvMmH https://explorer.solana.com/address/8HUDR4pgizvYtgRdAE82RyyK8jTEqVNLi9c9xNFbvMmH?cluster=devnet
+mintA / mintB:   G8hGd72yEJcCisWAEwewga7uFzXwvxwmHtRbDqDiw2D1 / GYYZDRWdqCexjk9o5aWA7Fdtm1uQio47Mu5KehdrUgLG
+fee / spacing:   0.25% / 60
+price (B per A): 1.991371602687595
+tickCurrent:     6888
+sqrtPriceX64:    26031301204159531733
+liquidity (L):   16189909849  <- active liquidity at the current tick
+vault balances:  1024.899654 A / 2388.621709 B
+
+=== Our positions (NFTs) ===
+NFT HhnsfjRLHKcrNrQpmggGnvtu8aUoacPNHXgo42v9RcHo
+  range ticks [4680, 8760] = price 1.5968 – 2.4012
+  liquidity 16189909849   IN RANGE (earning fees)
+  holds now: 1024.7747 A + 2388.4967 B
+  uncollected fees: 0 A raw, 0 B raw (updated on next position change)

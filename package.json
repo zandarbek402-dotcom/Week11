@@ -1,0 +1,39 @@
+{
+  "name": "week11-raydium-clmm",
+  "version": "1.0.0",
+  "scripts": {
+    "math": "tsx src/tick-math.ts",
+    "tokens": "tsx src/1-create-tokens.ts",
+    "pool": "tsx src/2-create-pool.ts",
+    "position": "tsx src/3-open-position.ts",
+    "swap": "tsx src/4-swap.ts",
+    "info": "tsx src/5-pool-info.ts",
+    "all": "npm run tokens && npm run pool && npm run position && npm run swap && npm run info",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zandarbek402-dotcom/Week11.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zandarbek402-dotcom/Week11/issues"
+  },
+  "homepage": "https://github.com/zandarbek402-dotcom/Week11#readme",
+  "description": "Week 11: AMM and concentrated liquidity (Raydium CLMM) on devnet",
+  "dependencies": {
+    "@raydium-io/raydium-sdk-v2": "^0.2.84-alpha",
+    "@solana/spl-token": "^0.4.15",
+    "@solana/web3.js": "^1.99.0",
+    "bn.js": "^5.2.5",
+    "decimal.js": "^10.6.0"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.2.0",
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}

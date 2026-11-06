@@ -1,0 +1,47 @@
+{
+  "tokenA": {
+    "mint": "G8hGd72yEJcCisWAEwewga7uFzXwvxwmHtRbDqDiw2D1",
+    "symbol": "W11A",
+    "decimals": 6,
+    "createTx": "35Bt3e1hi5XfS1y35K9yiX15XKDwAptX47ruN9iagAoE35GRkZonVsj83knKdWqUkDBJzp7raCeASEGMbRT4KeMA"
+  },
+  "wallet": "Gh36NV5M71XXmgNYYA3AYxNvMkKB4nD2cSpP5EcdmEDn",
+  "tokenB": {
+    "mint": "GYYZDRWdqCexjk9o5aWA7Fdtm1uQio47Mu5KehdrUgLG",
+    "symbol": "W11B",
+    "decimals": 6,
+    "createTx": "58AWgF1Rc35sevc2G8RCMVwrG67uopcz4Pbp8wTJdL4uCrsjLoMTto8YA8TgT4wp9e6a71Eu5s3sSXR6UsHuoYhr"
+  },
+  "pool": {
+    "id": "8HUDR4pgizvYtgRdAE82RyyK8jTEqVNLi9c9xNFbvMmH",
+    "ammConfig": "CD4aJtX11cqTCAc83nxSPkkh5JW2yjD6uwHeovjqQ1qu",
+    "tickSpacing": 60,
+    "feeRate": 2500,
+    "initialPrice": "1 W11A = 2 W11B",
+    "createTx": "3BGdpHYZdE1WDByb2QwQPDzN6epvvzgZKSr8EGbK5UMenc9NbB8WUZKXWhfAtRWeXfUk23EkpktLMpztC7N4zXoe"
+  },
+  "position": {
+    "nftMint": "HhnsfjRLHKcrNrQpmggGnvtu8aUoacPNHXgo42v9RcHo",
+    "tickLower": 4680,
+    "tickUpper": 8760,
+    "priceLower": "1.596760",
+    "priceUpper": "2.401170",
+    "tx": "4mnCqcY5bfCPbQwRjyWfKF761qqan3wjbUWrmbt2ACGEygQNtLi33ufkUWWafMQgne2fAXvz9Ymo3cUVYC5ccv1f"
+  },
+  "swaps": [
+    {
+      "direction": "W11A -> W11B",
+      "amountIn": "50",
+      "tx": "4QYcFF7C3hYkYjGhc4UCnUKNsGmyrEVPRQUenkSjvD9hP1vfZkvMbtciu7zizsHzb1no7u9xLb9zCS3bi2xURXrn",
+      "priceBefore": "2.000000",
+      "priceAfter": "1.982687"
+    },
+    {
+      "direction": "W11B -> W11A",
+      "amountIn": "50",
+      "tx": "3cx4T83Rg3EpUe72kQRF7eKL4vYwSRKr4EyUYxkp3BFLfLe42RXRKkbbB1iSPzg9WrUynxBDpmtMm4zHy78FVE1K",
+      "priceBefore": "1.982687",
+      "priceAfter": "1.991372"
+    }
+  ]
+}
